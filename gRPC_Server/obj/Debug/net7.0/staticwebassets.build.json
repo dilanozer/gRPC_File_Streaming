@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "RJf5llz+NewdbkUij580s1KcMyeW3Wm+gnSaREiFSzQ=",
+  "Source": "gRPC_Server",
+  "BasePath": "_content/gRPC_Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "gRPC_Server/wwwroot",
+      "Source": "gRPC_Server",
+      "ContentRoot": "/Users/dilanozer/Projects/gRPCFileStreaming/gRPC_Server/wwwroot/",
+      "BasePath": "_content/gRPC_Server",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

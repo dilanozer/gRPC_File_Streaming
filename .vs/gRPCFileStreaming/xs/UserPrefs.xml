@@ -1,0 +1,6 @@
+﻿<Properties StartupConfiguration="{6EBAAC8F-141C-48B2-87D1-2B2558CA2356}|https">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.gRPC__Upload__Client FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.gRPC__Server PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.gRPC__Download__Client FirstBuild="True" />
+</Properties>

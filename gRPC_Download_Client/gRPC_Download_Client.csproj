@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Protos\fileTransport.proto" GrpcServices="Server">
+      <Access>Public</Access>
+      <ProtoCompile>True</ProtoCompile>
+      <ProtoRoot></ProtoRoot>
+      <CompileOutputs>True</CompileOutputs>
+      <OutputDir>obj\Debug\net7.0\</OutputDir>
+      <Generator>MSBuild:Compile</Generator>
+    </Protobuf>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Protos\" />
+    <Folder Include="DownloadFiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Grpc.Tools" Version="2.65.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Grpc.Net.Client" Version="2.65.0" />
+    <PackageReference Include="Google.Protobuf" Version="3.27.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+      <Protobuf Include="Protos\fileTransport.proto" GrpcServices="Client" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="DownloadFiles\" />
+  </ItemGroup>
+</Project>
